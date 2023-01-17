@@ -1,0 +1,140 @@
+.bignewslarge__container {
+	display: flex;
+	padding-bottom: 17px;
+}
+
+.bignewslarge__container-splitbar {
+	display: flex;
+	border-top: 1px solid black;
+	padding: 17px 0px;
+}
+
+.bignewslarge__container-posts {
+	display: flex;
+	flex-grow: 1;
+	flex-basis: 0;
+	flex-direction: column;
+	margin-right: 17px;
+}
+
+.bignewslarge__container-posts h1 {
+	font-size: 20px;
+	margin: 0px;
+}
+
+.bignewslarge__container-posts p {
+	font-size: 15px;
+	color: grey;
+}
+
+.bignewslarge__container-image {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	flex-grow: 1;
+	flex-basis: 0;
+	/* width: 500px; */
+}
+
+.bignewslarge__container-image p {
+	font-size: 13px;
+	color: grey;
+}
+
+.bignewslarge__container-posts_splitbar {
+	height: 0.5px;
+	background: rgb(220, 220, 220);
+	margin: 13px 0px;
+}
+
+.travelnews__container {
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 34px;
+	align-items: center;
+	align-self: stretch;
+}
+
+.travelnews__container-splitbar {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-top: 1px solid black;
+	padding: 34px 0px;
+	align-self: stretch;
+}
+
+.travelnews__container-discription {
+	display: block;
+	width: 700px;
+	text-align: center;
+}
+
+.travelnews__container-discription h1, .travelnews__container-discription p {
+	margin: 5px 0px;
+}
+
+.bignewslarge__container-image_container {
+	display: flex;
+	overflow: scroll;
+	width: 500px;
+	transition: all 0.5s ease;
+	scroll-behavior: smooth;
+}
+
+.bignewslarge__container-image_container::-webkit-scrollbar {
+	display: none;
+}
+
+.image__navigate-bar {
+	align-self: stretch;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.image__navigate-bar_empty {
+	flex-grow: 1;
+	flex-basis: 0;
+	/* background: yellow; */
+}
+
+.image__navigate-bar_dots {
+	display: flex;
+	justify-content: center;
+}
+
+.image__navigate-bar_dots div {
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: lightgray;
+	margin-left: 5px;
+}
+
+.image__navigate-bar_scrollicon {
+	display: flex;
+	flex-grow: 1;
+	flex-basis: 0;
+	justify-content: flex-end;
+}
+
+.scroll-icon {
+	font-size: 13px;
+	font-weight: bolder;
+	padding: 7px;
+	cursor: pointer;
+	border: 1px solid lightgray;
+	transition: all 0.25s ease;
+	border-radius: 50%;
+	margin-left: 10px;
+}
+
+.scroll-icon:hover {
+	background: lightgray;
+	/* color: white */
+}
+
+.image__navigate-bar_dots .active {
+	background: black;
+}
